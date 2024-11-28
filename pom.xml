@@ -52,8 +52,8 @@
     </repositories>
 
     <properties>
-        <pac4j.version>6.0.3</pac4j.version>
-        <play.version>3.0.4</play.version>
+        <pac4j.version>6.1.0</pac4j.version>
+        <play.version>3.0.5</play.version>
         <java.version>17</java.version>
         <guice.version>6.0.0</guice.version>
         <shiro.version>1.13.0</shiro.version>
@@ -63,7 +63,7 @@
         <scala.maven.version>2.13.12</scala.maven.version>
         <junit.version>4.13.2</junit.version>
         <selenium.version>4.14.1</selenium.version>
-        <mockito.version>5.12.0</mockito.version>
+        <mockito.version>5.14.2</mockito.version>
         <pmdVersion>6.55.0</pmdVersion>
     </properties>
 
@@ -105,7 +105,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.32</version>
+            <version>1.18.36</version>
         </dependency>
 
         <!-- tests -->
@@ -173,7 +173,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.7.0</version>
+                <version>3.11.1</version>
                 <configuration>
                     <charset>UTF-8</charset>
                     <encoding>UTF-8</encoding>
@@ -191,7 +191,7 @@
             <plugin>
                 <groupId>net.alchim31.maven</groupId>
                 <artifactId>scala-maven-plugin</artifactId>
-                <version>4.9.1</version>
+                <version>4.9.2</version>
                 <executions>
                     <execution>
                         <goals>
@@ -214,7 +214,7 @@
             <plugin>
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-maven-plugin</artifactId>
-                <version>4.8.5.0</version>
+                <version>4.8.6.6</version>
                 <configuration>
                     <effort>Low</effort>
                     <threshold>Max</threshold>
@@ -275,7 +275,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.3.0</version>
+                <version>3.5.2</version>
                 <configuration>
                     <includes>
                         <include>**/*Tests.java</include>
@@ -301,7 +301,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>3.2.4</version>
+                        <version>3.2.7</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
