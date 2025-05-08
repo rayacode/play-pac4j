@@ -12,7 +12,7 @@
     <artifactId>play-pac4j-parent</artifactId>
     <packaging>pom</packaging>
     <name>pac4j parent for Play</name>
-    <version>12.0.1-PLAY3.0-SNAPSHOT</version>
+    <version>12.0.3-PLAY3.0-SNAPSHOT</version>
     <url>https://github.com/pac4j/play-pac4j</url>
 
     <licenses>
@@ -52,8 +52,8 @@
     </repositories>
 
     <properties>
-        <pac4j.version>6.1.0</pac4j.version>
-        <play.version>3.0.5</play.version>
+        <pac4j.version>6.1.2</pac4j.version>
+        <play.version>3.0.7</play.version>
         <java.version>17</java.version>
         <guice.version>6.0.0</guice.version>
         <shiro.version>1.13.0</shiro.version>
@@ -63,7 +63,7 @@
         <scala.maven.version>2.13.12</scala.maven.version>
         <junit.version>4.13.2</junit.version>
         <selenium.version>4.14.1</selenium.version>
-        <mockito.version>5.14.2</mockito.version>
+        <mockito.version>5.17.0</mockito.version>
         <pmdVersion>6.55.0</pmdVersion>
     </properties>
 
@@ -105,7 +105,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.36</version>
+            <version>1.18.38</version>
         </dependency>
 
         <!-- tests -->
@@ -151,7 +151,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.13.0</version>
+                <version>3.14.0</version>
                 <configuration>
                     <release>${java.version}</release>
                     <encoding>UTF-8</encoding>
@@ -173,7 +173,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.11.1</version>
+                <version>3.11.2</version>
                 <configuration>
                     <charset>UTF-8</charset>
                     <encoding>UTF-8</encoding>
@@ -191,7 +191,7 @@
             <plugin>
                 <groupId>net.alchim31.maven</groupId>
                 <artifactId>scala-maven-plugin</artifactId>
-                <version>4.9.2</version>
+                <version>4.9.5</version>
                 <executions>
                     <execution>
                         <goals>
@@ -214,7 +214,7 @@
             <plugin>
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-maven-plugin</artifactId>
-                <version>4.8.6.6</version>
+                <version>4.9.3.0</version>
                 <configuration>
                     <effort>Low</effort>
                     <threshold>Max</threshold>
@@ -275,7 +275,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.5.2</version>
+                <version>3.5.3</version>
                 <configuration>
                     <includes>
                         <include>**/*Tests.java</include>
